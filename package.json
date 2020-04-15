@@ -2,9 +2,9 @@
   "name": "netlify-passport",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lambda/auth.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "netlify dev NODE_ENV=development"
   },
   "keywords": [],
   "author": "",
