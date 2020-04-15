@@ -16,6 +16,8 @@ function authJwt(email) {
   return sign({ user: { email } }, SECRET);
 }
 
+console.log(`CALLBACK URL: ${BASE_URL}${ENDPOINT}/auth/github/callback`);
+
 passport.use(
   new GitHubStrategy(
     {
